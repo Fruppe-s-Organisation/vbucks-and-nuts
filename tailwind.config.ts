@@ -52,6 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gaming: {
+					primary: 'hsl(var(--gaming-primary))',
+					secondary: 'hsl(var(--gaming-secondary))',
+					accent: 'hsl(var(--gaming-accent))'
+				},
+				business: {
+					primary: 'hsl(var(--business-primary))',
+					secondary: 'hsl(var(--business-secondary))',
+					accent: 'hsl(var(--business-accent))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +94,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				fadeIn: {
+					from: { opacity: '0', transform: 'translateY(10px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				slideUp: {
+					from: { transform: 'translateY(20px)', opacity: '0' },
+					to: { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.5s ease-in-out',
+				'slide-up': 'slideUp 0.3s ease-out'
+			},
+			backgroundImage: {
+				'gradient-gaming': 'var(--gradient-gaming)',
+				'gradient-business': 'var(--gradient-business)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'gaming': 'var(--shadow-gaming)',
+				'business': 'var(--shadow-business)',
+				'elegant': 'var(--shadow-elegant)'
 			}
 		}
 	},
