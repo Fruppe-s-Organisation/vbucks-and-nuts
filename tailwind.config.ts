@@ -62,6 +62,14 @@ export default {
 					secondary: 'hsl(var(--business-secondary))',
 					accent: 'hsl(var(--business-accent))'
 				},
+				futuristic: {
+					primary: 'hsl(var(--futuristic-primary))',
+					secondary: 'hsl(var(--futuristic-secondary))',
+					accent: 'hsl(var(--futuristic-accent))',
+					bg: 'hsl(var(--futuristic-bg))',
+					surface: 'hsl(var(--futuristic-surface))',
+					glow: 'hsl(var(--futuristic-glow))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -118,7 +126,9 @@ export default {
 			boxShadow: {
 				'gaming': 'var(--shadow-gaming)',
 				'business': 'var(--shadow-business)',
-				'elegant': 'var(--shadow-elegant)'
+				'elegant': 'var(--shadow-elegant)',
+				'futuristic': 'var(--shadow-futuristic)',
+				'neon': 'var(--shadow-neon)'
 			}
 		}
 	},
